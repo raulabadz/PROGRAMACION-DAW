@@ -81,10 +81,40 @@ existents.
 bitllets de 50, 1 bitllet de 20; 1 bitllet de 10, 0 bitllets de 5 . Sobren 2 €
         */
        /* int eurosAportados = 232;
-        int billete500C = eurosAportados/billete500;
-        System.out.println("billetes de 500: "+billete500C);
-        int sobrante = 
+        int sobrante = eurosAportados;
+        
+        int billete500C = sobrante/BILLETE500;
+        sobrante = sobrante % BILLETE500;
+        
+        int billete200C = sobrante / BILLETE200;
+        sobrante = sobrante % BILLETE200;
+        
+         int billete100C = sobrante / BILLETE100;
+        sobrante = sobrante % BILLETE100;
+        
+         int billete50C = sobrante / BILLETE50;
+        sobrante = sobrante % BILLETE50;
+        
+        int billete20C = sobrante / BILLETE20;
+        sobrante = sobrante % BILLETE20;
+        
+         int billete10C = sobrante / BILLETE10;
+        sobrante = sobrante % BILLETE10;
+        
+        int billete5C = sobrante / BILLETE5;
+        sobrante = sobrante % BILLETE5;
+
+         System.out.println("billetes de 500: "+billete500C);
+         System.out.println("billetes de 200: " + billete200C);
+        System.out.println("billetes de 100: " + billete100C);
+        System.out.println("billetes de 50: " + billete50C);
+        System.out.println("billetes de 20: " + billete20C);
+        System.out.println("billetes de 10: " + billete10C);
+        System.out.println("billetes de 5: " + billete5C);
+        System.out.println("Sobran " + sobrante + " €");
+        
 */
+
         
         
     }
